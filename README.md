@@ -1,14 +1,19 @@
-# Certificate Web UI 
-  
+# OpenCerts Legacy Templates (v1.5 & below)
+
 [![Build Status](https://travis-ci.org/OpenCerts/opencerts-website.svg?branch=master)](https://travis-ci.org/OpenCerts/opencerts-website)
 
 See also:
 
-* [opencerts-documentation](https://github.com/OpenCerts/opencerts-documentation)
-* [open-certificate](https://github.com/OpenCerts/open-certificate)
-* [certificate-contract](https://github.com/OpenCerts/certificate-store-contract)
-* [certificate-cli](https://github.com/OpenCerts/certificate-cli)
+- [opencerts-documentation](https://github.com/OpenCerts/opencerts-documentation)
+- [open-certificate](https://github.com/OpenCerts/open-certificate)
+- [certificate-contract](https://github.com/OpenCerts/certificate-store-contract)
+- [certificate-cli](https://github.com/OpenCerts/certificate-cli)
 
+## Migrating to OpenCerts v2
+
+This repository is only for existing templates: no new templates will be accepted, only existing changes to current templates can be made via pull requests.
+
+To create a new template with OpenCerts v2, refer to the documentation at [https://docs.opencerts.io/](https://docs.opencerts.io/).
 
 ## Development
 
@@ -22,8 +27,8 @@ There is a rudimentary interface for adding a new template for organisations tha
 npm run dev-cli
 ```
 
-
 ### OS X / Linux
+
 ```bash
 npm install
 npm run dev
@@ -43,6 +48,7 @@ npm run dev
 `NET` is used for setting the default network, setting it to `mainnet` uses the public Ethereum network. If it is not set it defaults to Ropsten testnet
 
 E.g:
+
 ```bash
 NET=mainnet npm run dev
 ```
@@ -60,6 +66,7 @@ To enable debug logs in the browser, set `localStorage.debug="*"`
 ###### Module build failed
 
 If you see module build failure message like:
+
 ```
 Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):
 ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
@@ -68,4 +75,3 @@ at Object.readdirSync (fs.js:783:3)
 ```
 
 Try running `npm rebuild`
-
