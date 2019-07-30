@@ -5,13 +5,12 @@ const templates = [
   {
     id: "transcript",
     label: "Transcript",
-    template: Transcript  
+    template: Transcript
   }
 ];
 
 const SMUTranscript = props => (
-  <MultiCertificateRenderer templates={templates}
-  {...props} />
+  <MultiCertificateRenderer templates={templates} {...props} />
 );
 
 export default SMUTranscript;

@@ -14,6 +14,6 @@ export default addDirToTemplatePath("edu", {
   ...nyp,
   ...ite,
   ...tp,
-  ...rp, 
+  ...rp,
   ...smu
 });

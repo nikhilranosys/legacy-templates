@@ -10,8 +10,7 @@ const templates = [
 ];
 
 const SMUCertificate = props => (
-  <MultiCertificateRenderer templates={templates}
-  {...props} />
+  <MultiCertificateRenderer templates={templates} {...props} />
 );
 
 export default SMUCertificate;
