@@ -1,5 +1,6 @@
 import MultiCertificateRenderer from "template-utils/MultiCertificateRenderer";
 import Transcript from "./transcript";
+import approvedAddresses from "../common";
 
 const templates = [
   {
@@ -10,7 +11,11 @@ const templates = [
 ];
 
 const SMUTranscript = props => (
-  <MultiCertificateRenderer templates={templates} {...props} />
+  <MultiCertificateRenderer
+    templates={templates}
+    whitelist={approvedAddresses}
+    {...props}
+  />
 );
 
 export default SMUTranscript;

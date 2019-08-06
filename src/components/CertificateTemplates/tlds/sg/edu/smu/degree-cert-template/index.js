@@ -1,5 +1,6 @@
 import MultiCertificateRenderer from "template-utils/MultiCertificateRenderer";
 import Certificate from "./certificate";
+import approvedAddresses from "../common";
 
 const templates = [
   {
@@ -10,7 +11,11 @@ const templates = [
 ];
 
 const SMUCertificate = props => (
-  <MultiCertificateRenderer templates={templates} {...props} />
+  <MultiCertificateRenderer
+    templates={templates}
+    whitelist={approvedAddresses}
+    {...props}
+  />
 );
 
 export default SMUCertificate;
